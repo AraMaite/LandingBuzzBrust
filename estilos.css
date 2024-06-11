@@ -50,6 +50,8 @@ img{
     height: 450px;
     object-fit: cover;
     animation: arriba 1s ease-in;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: box-shadown 0.3s;
 }
 
 .textos{
@@ -82,6 +84,24 @@ img{
     animation: arriba 1s ease-in;
 
 }
+html {
+    scroll-behavior: smooth;
+}
+#contacto a img {
+    margin: 0 5px;
+    vertical-align: middle;
+}
+#servicios {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    margin-top: 30px;
+    color: #fff;
+    animation: moverIzquierda 1s ease-in;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
 
 .wave{
     height: 100px;
@@ -104,8 +124,8 @@ img{
     width: 100%;
     transition: all 1s ease;
     background: #bc4e9c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
