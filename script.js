@@ -13,3 +13,19 @@ boton.addEventListener("click", function(e){
         contador=0;
     }
 })
+document.addEventListener('DOMContentLoaded', funcion(){
+    const link = document.querySelectorAll('a[href^="#"]');
+
+    for (le link of links) {
+        link.addEventListener('click', funcion(e) {
+            e.preventDefault();
+
+            const targetID = this.getAtribute('href').substring(1);
+            const tragetElement = document.getElementById(targetId);
+
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+});
